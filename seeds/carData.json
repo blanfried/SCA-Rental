@@ -1,0 +1,27 @@
+[
+      {
+        "brand": "Ford",
+        "model": "Fiesta",
+        "size": "small",
+        "passengers": 5,
+        "doors": 4,
+        "transmission": "automatic"
+      },
+      {
+        "brand": "Ford",
+        "model": "Fiesta",
+        "size": "small",
+        "passengers": 5,
+        "doors": 4,
+        "transmission": "automatic"
+      },
+      {
+        "brand": "Ford",
+        "model": "Fiesta",
+        "size": "small",
+        "passengers": 5,
+        "doors": 4,
+        "transmission": "automatic"
+      },
+    ]
+    
