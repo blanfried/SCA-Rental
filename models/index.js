@@ -6,6 +6,11 @@ User.hasMany(Car, {
   onDelete: 'CASCADE'
 });
 
+Location.hasMany(Car, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
+
 Car.belongsTo(User, {
   foreignKey: 'user_id'
 });
