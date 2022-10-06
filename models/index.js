@@ -7,7 +7,7 @@ User.hasMany(Car, {
 });
 
 Location.hasMany(Car, {
-  foreignKey: 'user_id',
+  foreignKey: 'location_id',
   onDelete: 'CASCADE'
 });
 
