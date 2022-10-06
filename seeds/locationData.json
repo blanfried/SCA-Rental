@@ -2,20 +2,20 @@
       {
         "Country": "United Kingdom",
         "City": "Birmingham",
-        "Latitude": "?",
-        "Longitude": "?"
+        "Latitude": 1,
+        "Longitude": 1
       },
       {
         "Country": "United States",
         "City": "Los Angeles",
-        "Latitude": "?",
-        "Longitude": "?"
+        "Latitude": 1,
+        "Longitude": 1
       },
       {
         "Country": "United Kingdom",
         "City": "London",
-        "Latitude": "?",
-        "Longitude": "?"
+        "Latitude": 1,
+        "Longitude": 1
       }
     ]
     
