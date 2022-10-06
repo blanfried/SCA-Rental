@@ -15,4 +15,4 @@ Car.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Car };
+module.exports = { User, Car, Location };
