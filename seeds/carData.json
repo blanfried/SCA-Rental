@@ -47,20 +47,20 @@
     "model": "Spark",
     "size": "small",
     "transmission": "manual",
-    "Location": "LA"
+    "Location": "Los Angeles"
   },
   {
     "brand": "Suzuki",
     "model": "Liana",
     "size": "medium",
     "transmission": "automatic",
-    "Location": "LA"
+    "Location": "Los Angeles"
   },
   {
     "brand": "JEEP",
     "model": "Cherokee",
     "size": "large",
     "transmission": "automatic",
-    "Location": ""
+    "Location": "Los Angeles"
   }
 ]
