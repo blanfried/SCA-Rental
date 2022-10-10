@@ -27,6 +27,13 @@ Location.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    car_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'car',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
