@@ -1,26 +1,66 @@
 [
-      {
-        "brand": "Ford",
-        "model": "Fiesta",
-        "size": "small",
-        "passengers": 5,
-        "doors": 4,
-        "transmission": "automatic"
-      },
-      {
-        "brand": "Ford",
-        "model": "Fiesta",
-        "size": "small",
-        "passengers": 5,
-        "doors": 4,
-        "transmission": "automatic"
-      },
-      {
-        "brand": "Ford",
-        "model": "Fiesta",
-        "size": "small",
-        "passengers": 5,
-        "doors": 4,
-        "transmission": "automatic"
-      }
-    ]
+  {
+    "brand": "Ford",
+    "model": "Mondeo",
+    "size": "small",
+    "transmission": "automatic",
+    "Location": "London"
+  },
+  {
+    "brand": "Vauxhall",
+    "model": "Corsa",
+    "size": "small",
+    "transmission": "manual",
+    "Location": "London"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLA",
+    "size": "large",
+    "transmission": "automatic",
+    "Location": "London"
+  },
+
+  {
+    "brand": "Kia",
+    "model": "Picanto",
+    "size": "small",
+    "transmission": "manual",
+    "Location": "Birmingham"
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "size": "medium",
+    "transmission": "automatic",
+    "Location": "Birmingham"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Shogun",
+    "size": "large",
+    "transmission": "automatic",
+    "Location": "Birmingham"
+  },
+  {
+    "brand": "Chevrolet",
+    "model": "Spark",
+    "size": "small",
+    "transmission": "manual",
+    "Location": "LA"
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Liana",
+    "size": "medium",
+    "transmission": "automatic",
+    "Location": "LA"
+  },
+  {
+    "brand": "JEEP",
+    "model": "Cherokee",
+    "size": "large",
+    "transmission": "automatic",
+    "Location": ""
+  }
+]
