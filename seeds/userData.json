@@ -1,18 +1,7 @@
 [
-      {
-        "name": "Baer Lanfried",
-        "email": "blanfried@yahoo.com",
-        "password": ""
-      },
-      {
-        "name": "Baer Lanfried",
-        "email": "blanfried@yahoo.com",
-        "password": ""
-      },
-      {
-        "name": "Baer Lanfried",
-        "email": "blanfried@yahoo.com",
-        "password": ""
-      }
-    ]
-    
+  {
+    "name": "Baer Lanfried",
+    "email": "blanfried@yahoo.com",
+    "password": ""
+  }
+]
