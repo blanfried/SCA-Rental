@@ -3,7 +3,7 @@ const { Car } = require("../../models");
 
 router.get("/", async (req, res) => {
   try {
-    const carData = await Category.findAll({
+    const carData = await Car.findAll({
       include: [Location],
     });
     res.status(200).json(carData);

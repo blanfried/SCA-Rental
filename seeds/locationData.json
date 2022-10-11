@@ -1,21 +1,14 @@
 [
-      {
-        "Country": "United Kingdom",
-        "City": "Birmingham",
-        "Latitude": 1,
-        "Longitude": 1
-      },
-      {
-        "Country": "United States",
-        "City": "Los Angeles",
-        "Latitude": 1,
-        "Longitude": 1
-      },
-      {
-        "Country": "United Kingdom",
-        "City": "London",
-        "Latitude": 1,
-        "Longitude": 1
-      }
-    ]
-    
+  {
+    "Country": "United Kingdom",
+    "City": "Birmingham"
+  },
+  {
+    "Country": "United States",
+    "City": "Los Angeles"
+  },
+  {
+    "Country": "United Kingdom",
+    "City": "London"
+  }
+]
