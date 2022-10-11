@@ -4,6 +4,7 @@
     "model": "Mondeo",
     "size": "small",
     "transmission": "automatic",
+    "filename": "ford.jpg",
     "Location": "London"
   },
   {
@@ -11,6 +12,7 @@
     "model": "Corsa",
     "size": "small",
     "transmission": "manual",
+    "filename": "vauxhall.webp",
     "Location": "London"
   },
   {
@@ -18,6 +20,7 @@
     "model": "GLA",
     "size": "large",
     "transmission": "automatic",
+    "filename": "mercedes.webp",
     "Location": "London"
   },
 
@@ -26,6 +29,7 @@
     "model": "Picanto",
     "size": "small",
     "transmission": "manual",
+    "filename": "Picanto.webp",
     "Location": "Birmingham"
   },
   {
@@ -33,6 +37,7 @@
     "model": "3 Series",
     "size": "medium",
     "transmission": "automatic",
+    "filename": "BMW.jpg",
     "Location": "Birmingham"
   },
   {
@@ -40,6 +45,7 @@
     "model": "Shogun",
     "size": "large",
     "transmission": "automatic",
+    "filename": "mitsubushi.jpg",
     "Location": "Birmingham"
   },
   {
@@ -47,6 +53,7 @@
     "model": "Spark",
     "size": "small",
     "transmission": "manual",
+    "filename": "spark.jpg",
     "Location": "Los Angeles"
   },
   {
@@ -54,6 +61,7 @@
     "model": "Liana",
     "size": "medium",
     "transmission": "automatic",
+    "filename": "suzuki.jpg",
     "Location": "Los Angeles"
   },
   {
@@ -61,6 +69,7 @@
     "model": "Cherokee",
     "size": "large",
     "transmission": "automatic",
+    "filename": "jeep.webp",
     "Location": "Los Angeles"
   }
 ]
