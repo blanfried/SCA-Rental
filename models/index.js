@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-const User = require("./User");
-const Car = require("./Car");
-const Location = require("./Location");
-=======
 const Location = require("./Location");
 const User = require("./User");
 const Car = require("./Car");
->>>>>>> 958da0969f094244b8011f6c38ba2db16275603f
 
 User.hasMany(Car, {
   foreignKey: "user_id",
