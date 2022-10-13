@@ -83,5 +83,26 @@
     "size": "large",
     "transmission": "automatic",
     "Location": "Manchester"
+  },
+  {
+    "brand": "Audi",
+    "model": "A1",
+    "size": "small",
+    "transmission": "manual",
+    "Location": "Edinburgh"
+  },
+  {
+    "brand": "Volvo",
+    "model": "V60",
+    "size": "medium",
+    "transmission": "manual",
+    "Location": "Edinburgh"
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "size": "large",
+    "transmission": "automatic",
+    "Location": "Edinburgh"
   }
 ]
