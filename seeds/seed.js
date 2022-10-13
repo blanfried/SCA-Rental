@@ -13,10 +13,16 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  const location = await Location.bulkCreate(locationData, {
+    individualHooks: true,
+    returning: true,
+  });
+
   for (const car of carData) {
     await Car.create({
       ...car,
       user_id: users[Math.floor(Math.random() * users.length)].id,
+      location_id: location[Math.floor(Math.random() * location.length)].id,
     });
   }
 

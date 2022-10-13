@@ -1,14 +1,14 @@
 [
   {
-    "Country": "United Kingdom",
-    "City": "Birmingham"
+    "country": "United Kingdom",
+    "city": "Birmingham"
   },
   {
-    "Country": "United States",
-    "City": "Los Angeles"
+    "country": "United States",
+    "city": "Los Angeles"
   },
   {
-    "Country": "United Kingdom",
-    "City": "London"
+    "country": "United Kingdom",
+    "city": "London"
   }
 ]
