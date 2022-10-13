@@ -10,5 +10,13 @@
   {
     "country": "United Kingdom",
     "city": "London"
+  },
+  {
+    "country": "United Kingdom",
+    "city": "Manchester"
+  },
+  {
+    "country": "United Kingdom",
+    "city": "Edinburgh"
   }
 ]
