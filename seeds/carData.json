@@ -62,5 +62,26 @@
     "size": "large",
     "transmission": "automatic",
     "Location": "Los Angeles"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Yaris",
+    "size": "small",
+    "transmission": "automatic",
+    "Location": "Manchester"
+  },
+  {
+    "brand": "Citroën",
+    "model": "C4",
+    "size": "medium",
+    "transmission": "manual",
+    "Location": "Manchester"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "size": "large",
+    "transmission": "automatic",
+    "Location": "Manchester"
   }
 ]
