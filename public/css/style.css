@@ -1,0 +1,24 @@
+.header {
+  background: green !important;
+}
+a.navbar-brand {
+  color: #fff !important;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 145%;*/
+  padding: 40px;
+}
+
+li {
+  list-style: none;
+}
+.h3,
+h3 {
+  font-size: 1.5rem;
+}
