@@ -7,16 +7,13 @@ router.use("/api", apiRoutes);
 router.get("/", async (req, res) => {
   try {
     console.log("hello");
-    // let userData = await User.findAll();
-    // let users = userData.map((user) => user.get({ plain: true }));
-    // let branchData = await Location.findAll();
-    // let branch = branchData.map((location) => location.get({ plain: true }));
+    let userData = await User.findAll();
+    let users = userData.map((user) => user.get({ plain: true }));
+    let locationData = await Location.findAll();
+    let locations = locationData.map((branch) => branch.get({ plain: true }));
     console.log(users);
-    // console.log(location);
-    res.render(
-      "homepage"
-      // , { users, branch }
-    );
+    console.log(locations);
+    res.render("homepage", { users, locations });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -35,4 +32,34 @@ router.get("/car", async (req, res) => {
   }
 });
 
+router.get("/location", async (req, res) => {
+  try {
+    let locationData = await Location.findAll();
+    let locations = locationData.map((branch) => branch.get({ plain: true }));
+
+    res.render("location", {
+      locations,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/car/:id", async (req, res) => {
+  try {
+    const carDataSingle = await Car.findByPk(req.params.id, {
+      include: [
+        {
+          model: Car,
+        },
+      ],
+    });
+    console.log(carDataSingle);
+    const carSingle = carDataSingle.get({ plain: true });
+    console.log(carSingle);
+    res.render("carsingle");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;

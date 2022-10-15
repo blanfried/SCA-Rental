@@ -22,3 +22,25 @@ li {
 h3 {
   font-size: 1.5rem;
 }
+
+.carousel-item.active {
+  height: 450px;
+  margin-top: -20px;
+}
+h5.banner {
+  text-shadow: 3px 3px #008000;
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: white;
+}
+p.slogan {
+  font-size: 35px;
+  text-shadow: 2px 2px green;
+}
+.card {
+  margin-top: 20px;
+}
+
+.card-img-top {
+  height: 175px;
+}
