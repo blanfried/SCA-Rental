@@ -47,17 +47,37 @@ router.get("/location", async (req, res) => {
 
 router.get("/car/:id", async (req, res) => {
   try {
-    const carDataSingle = await Car.findByPk(req.params.id, {
-      include: [
-        {
-          model: Car,
-        },
-      ],
-    });
+    const carDataSingle = await Car.findByPk(req.params.id);
     console.log(carDataSingle);
     const carSingle = carDataSingle.get({ plain: true });
-    console.log(carSingle);
-    res.render("carsingle");
+    console.log("Single", carSingle.brand);
+    res.render(
+      "carsingle",
+      carSingle
+      // , {
+      //   include: [{ model: Car, attributes: ["id", "brand", "model", "size"] }],
+      // }
+    );
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/location/:id", async (req, res) => {
+  try {
+    const locationDataSingle = await Location.findByPk(req.params.id);
+    console.log(locationDataSingle);
+    const locationSingle = locationDataSingle.get({ plain: true });
+    console.log("Single", locationSingle.city);
+    res.render(
+      "locationsingle",
+      locationSingle
+      // {
+      //   include: [
+      //     { model: Location, attributes: ["id", "country", "city", "image"] },
+      //   ],
+      // }
+    );
   } catch (err) {
     res.status(500).json(err);
   }
