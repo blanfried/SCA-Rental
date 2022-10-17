@@ -8,6 +8,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2"
   },
+
   {
     "FuelType": "ELECTRIC",
     "Transmission": "AUTOMATIC",
