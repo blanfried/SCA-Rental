@@ -65,13 +65,22 @@ router.get("/car/:id", async (req, res) => {
 
 router.get("/location/:id", async (req, res) => {
   try {
-    const locationDataSingle = await Location.findByPk(req.params.id);
+    const locationDataSingle = await Car.findAll({
+      where: { location_id: req.params.id },
+    });
     console.log(locationDataSingle);
-    const locationSingle = locationDataSingle.get({ plain: true });
-    console.log("Single", locationSingle.city);
+    // const locationSingle = locationDataSingle.get({ plain: true });
+
+    const locationCars = locationDataSingle.map((results) =>
+      results.get({ plain: true })
+    );
+
+    console.log(locationCars);
+
+    // console.log("Single", locationSingle.y);
     res.render(
       "locationsingle",
-      locationSingle
+      { locationCars }
       // {
       //   include: [
       //     { model: Location, attributes: ["id", "country", "city", "image"] },
