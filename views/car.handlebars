@@ -1,62 +1,16 @@
+<div class="oner"><h1>All Cars</h1></div>
+
 {{#each cars}}
 
   <div class="card" style="width: 18rem;">
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDRFoXBJ5uhrTGiAlIijALxnPh7Mz9xmKDg&usqp=CAU"
-      class="card-img-top"
-      alt="..."
-    />
+    <img src="{{image}}" class="card-img-top" alt="..." />
     <div class="card-body">
-      <h3>{{brand}} {{model}}</h3>
-      <li><p class="card-text"><strong>Size:</strong> {{size}}</p></li>
-      <li><p class="card-text"><strong>Transmission:</strong>
-          {{transmission}}</p></li>
-      <p class="card-text">Some quick example text to build on the card title
-        and make up the bulk of the card's content.</p>
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Launch demo modal
-      </button>
+      <h3>{{Marque}} {{Range}}</h3>
+      <h4>{{Location}}</h4>
+
+      <a href="/car/{{id}}" type="button" class="btn btn-primary car">More
+        Details</a>
     </div>
   </div>
 
-  <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body"><h3>When dates would you like to rent the
-            {{brand}}
-            {{model}}?</h3>
-          <p>Pick Up Date: <input type="text" id="datepicker" /></p>
-          <p>Drop Off Date: <input type="text" id="datepicker1" /></p>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
 {{/each}}

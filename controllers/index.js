@@ -68,9 +68,10 @@ router.get("/location/:id", async (req, res) => {
     const locationDataSingle = await Car.findAll({
       where: { location_id: req.params.id },
     });
+    // const cityName = await Location.findOne(req.params.id);
     console.log(locationDataSingle);
-    // const locationSingle = locationDataSingle.get({ plain: true });
-
+    // const locationName = cityName.get({ plain: true });
+    // console.log(cityName);
     const locationCars = locationDataSingle.map((results) =>
       results.get({ plain: true })
     );

@@ -8,7 +8,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "London",
-    "image": "images/v4.webp"
+    "image": "/images/v4.webp"
   },
 
   {
@@ -20,7 +20,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "London",
-    "image": "images/leaf.jpg"
+    "image": "/images/leaf.jpg"
   },
 
   {
@@ -32,7 +32,7 @@
     "NumberOfDoors": 4,
     "DriveType": "4X2",
     "Location": "London",
-    "image": "images/cclass.png"
+    "image": "/images/cclass.png"
   },
   {
     "FuelType": "PETROL",
@@ -43,7 +43,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Birmingham",
-    "image": "images/juke.jfif"
+    "image": "/images/juke.jfif"
   },
   {
     "FuelType": "PETROL",
@@ -54,7 +54,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Birmingham",
-    "image": "images/stonic.webp"
+    "image": "/images/stonic.webp"
   },
   {
     "FuelType": "PETROL",
@@ -65,7 +65,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Birmingham",
-    "image": "images/sportage.jpg"
+    "image": "/images/sportage.jpg"
   },
   {
     "FuelType": "PETROL",
@@ -76,7 +76,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Birmingham",
-    "image": "p208"
+    "image": "/images/p208.png"
   },
   {
     "FuelType": "PETROL",
@@ -87,7 +87,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Los Angeles",
-    "image": "images/tipo.jpg"
+    "image": "/images/tipo.jpg"
   },
   {
     "FuelType": "PETROL",
@@ -98,7 +98,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Los Angeles",
-    "image": "images/500.png"
+    "image": "/images/500.png"
   },
   {
     "FuelType": "DIESEL",
@@ -109,7 +109,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Los Angeles",
-    "image": "images/epace.webp"
+    "image": "/images/epace.webp"
   },
   {
     "FuelType": "PETROL",
@@ -120,7 +120,7 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "Los Angeles",
-    "image": "images/ibiza.webp"
+    "image": "/images/ibiza.webp"
   },
   {
     "FuelType": "PETROL",
@@ -131,6 +131,6 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2",
     "Location": "London",
-    "image": "images/eco.webp"
+    "image": "/images/eco.jpg"
   }
 ]
