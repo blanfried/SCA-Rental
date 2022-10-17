@@ -1,17 +1,16 @@
 const router = require("express").Router();
-const { Car, Location } = require("../../models");
+
+const { Car } = require("../../models");
+
+
 
 router.get("/", async (req, res) => {
   try {
     const carData = await Car.findAll({
-      include: [
-        {
-          model: Location,
-          attributes: ["country"],
-        },
-      ],
+
+      include: [Location],
     });
-    console.log(carData);
+
     res.status(200).json(carData);
   } catch (err) {
     res.status(500).json(err);
