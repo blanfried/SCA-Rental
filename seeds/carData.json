@@ -1,108 +1,111 @@
 [
   {
-    "brand": "Ford",
-    "model": "Mondeo",
-    "size": "small",
-    "transmission": "automatic",
-    "Location": "London"
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "CITROEN",
+    "Range": "C4",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Vauxhall",
-    "model": "Corsa",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "London"
-  },
-  {
-    "brand": "Mercedes-Benz",
-    "model": "GLA",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "London"
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "NISSAN",
+    "Range": "LEAF",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
 
   {
-    "brand": "Kia",
-    "model": "Picanto",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Birmingham"
+    "FuelType": "ELECTRIC/PETROL",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "SALOON",
+    "Marque": "MERCEDES",
+    "Range": "C-CLASS",
+    "NumberOfDoors": 4,
+    "DriveType": "4X2"
   },
   {
-    "brand": "BMW",
-    "model": "3 Series",
-    "size": "medium",
-    "transmission": "automatic",
-    "Location": "Birmingham"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Coupe",
+    "Marque": "NISSAN",
+    "Range": "JUKE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Mitsubishi",
-    "model": "Shogun",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Birmingham"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "KIA",
+    "Range": "STONIC",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Chevrolet",
-    "model": "Spark",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Los Angeles"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "ESTATE",
+    "Marque": "KIA",
+    "Range": "SPORTAGE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Suzuki",
-    "model": "Liana",
-    "size": "medium",
-    "transmission": "automatic",
-    "Location": "Los Angeles"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "PEUGEOT",
+    "Range": "208",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "JEEP",
-    "model": "Cherokee",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Los Angeles"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "FIAT",
+    "Range": "208",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Toyota",
-    "model": "Yaris",
-    "size": "small",
-    "transmission": "automatic",
-    "Location": "Manchester"
+    "FuelType": "PETROL",
+    "Transmission": "SEMI AUTO",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "FIAT",
+    "Range": "500X",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Citroën",
-    "model": "C4",
-    "size": "medium",
-    "transmission": "manual",
-    "Location": "Manchester"
+    "FuelType": "DIESEL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "JAGUAR",
+    "Range": "E-PACE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Volkswagen",
-    "model": "Tiguan",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Manchester"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "SEAT",
+    "Range": "IBIZA",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   },
   {
-    "brand": "Audi",
-    "model": "A1",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Edinburgh"
-  },
-  {
-    "brand": "Volvo",
-    "model": "V60",
-    "size": "medium",
-    "transmission": "manual",
-    "Location": "Edinburgh"
-  },
-  {
-    "brand": "BMW",
-    "model": "X3",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Edinburgh"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Estate",
+    "Marque": "FORD",
+    "Range": "ECOSPORT",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2"
   }
 ]
