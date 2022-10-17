@@ -10,7 +10,11 @@
     "DriveType": "4X2"
   },
 
+<<<<<<< HEAD
  {
+=======
+  {
+>>>>>>> c364e21aed9da91a66fcd264d4be6dcebd4e0538
     "FuelType": "ELECTRIC",
     "Transmission": "AUTOMATIC",
     "BodyStyle": "HATCHBACK",
