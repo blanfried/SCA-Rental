@@ -17,11 +17,11 @@
   <body>
     <nav class="navbar header fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">SCA Car Rental</a>
-        {{#if loggedIn}}
-          <button id="logout" class="btn-no-style">Logout</button>
+        <a class="navbar-brand" href="/">SCA Car Rental</a>
+        {{#if logged_in}}
+          <button id="logout">Logout</button>
         {{else}}
-          <a href="/login">Login</a>
+          <button><a href="/login">Login</a></button>
         {{/if}}
         <button
           class="navbar-toggler"
@@ -100,7 +100,6 @@
     </header>
     <main class="container container-fluid mt-5"><div class="flex-container">
         {{{body}}}
-      </div>
     </main>
     <footer>
 
@@ -111,8 +110,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    {{#if loggedIn}}
-      <script src="/public/js/logout.js"></script>
+    {{#if logged_in}}
+      <script src="../js/logout.js"></script>
     {{/if}}
 
   </body>

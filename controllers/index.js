@@ -14,7 +14,11 @@ router.get("/", async (req, res) => {
     let locations = locationData.map((branch) => branch.get({ plain: true }));
     console.log(users);
     console.log(locations);
-    res.render("homepage", { users, locations });
+    res.render("homepage", {
+      users,
+      locations,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -37,16 +41,17 @@ router.get("/location", async (req, res) => {
   try {
     let locationData = await Location.findAll();
     let locations = locationData.map((branch) => branch.get({ plain: true }));
-
+    console.log(req.session.logged_in);
     res.render("location", {
       locations,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get("/car/:id", async (req, res) => {
+router.get("/car/:id", withAuth, async (req, res) => {
   try {
     const carDataSingle = await Car.findByPk(req.params.id);
     console.log(carDataSingle);
@@ -54,7 +59,10 @@ router.get("/car/:id", async (req, res) => {
     console.log("Single", carSingle.brand);
     res.render(
       "carsingle",
-      carSingle
+      {
+        carSingle,
+        logged_in: req.session.logged_in,
+      }
       // , {
       //   include: [{ model: Car, attributes: ["id", "brand", "model", "size"] }],
       // }
@@ -64,7 +72,7 @@ router.get("/car/:id", async (req, res) => {
   }
 });
 
-router.get("/location/:id", async (req, res) => {
+router.get("/location/:id", withAuth, async (req, res) => {
   try {
     const locationDataSingle = await Car.findAll({
       where: { location_id: req.params.id },
@@ -81,7 +89,7 @@ router.get("/location/:id", async (req, res) => {
     // console.log("Single", locationSingle.y);
     res.render(
       "locationsingle",
-      { locationCars }
+      { locationCars, logged_in: req.session.logged_in }
       // {
       //   include: [
       //     { model: Location, attributes: ["id", "country", "city", "image"] },
@@ -114,10 +122,6 @@ router.get("/profile", withAuth, async (req, res) => {
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect("/carsingle");
-    return;
-  }
 
   res.render("login");
 });

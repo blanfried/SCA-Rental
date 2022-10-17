@@ -10,9 +10,9 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
-
+    console.log(response);
     if (response.ok) {
-      document.location.replace("/locationsingle");
+      document.location.replace("/location");
     } else {
       alert(response.statusText);
     }
@@ -34,7 +34,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.replace("/location");
     } else {
       alert(response.statusText);
     }
