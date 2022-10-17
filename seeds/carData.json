@@ -21,8 +21,7 @@
     "transmission": "automatic",
     "Location": "London"
   },
-
-  {
+{
     "brand": "Kia",
     "model": "Picanto",
     "size": "small",
@@ -63,50 +62,5 @@
     "size": "large",
     "transmission": "automatic",
     "Location": "Los Angeles"
-<<<<<<< Updated upstream
-=======
-  },
-  {
-    "brand": "Toyota",
-    "model": "Yaris",
-    "size": "small",
-    "transmission": "automatic",
-    "Location": "Manchester"
-  },
-  {
-    "brand": "Citroën",
-    "model": "C3",
-    "size": "medium",
-    "transmission": "manual",
-    "Location": "Manchester"
-  },
-  {
-    "brand": "Volkswagen",
-    "model": "Tiguan",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Manchester"
-  },
-  {
-    "brand": "Audi",
-    "model": "A1",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Edinburgh"
-  },
-  {
-    "brand": "Volvo",
-    "model": "S60",
-    "size": "medium",
-    "transmission": "manual",
-    "Location": "Edinburgh"
-  },
-  {
-    "brand": "BMW",
-    "model": "X3",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Edinburgh"
->>>>>>> Stashed changes
   }
 ]
