@@ -1,5 +1,6 @@
 [
   {
+
     "FuelType": "ELECTRIC",
     "Transmission": "AUTOMATIC",
     "BodyStyle": "HATCHBACK",
@@ -8,7 +9,8 @@
     "NumberOfDoors": 5,
     "DriveType": "4X2"
   },
-  {
+
+ {
     "FuelType": "ELECTRIC",
     "Transmission": "AUTOMATIC",
     "BodyStyle": "HATCHBACK",
@@ -27,6 +29,7 @@
     "NumberOfDoors": 4,
     "DriveType": "4X2"
   },
+<<<<<<< Updated upstream
   {
     "FuelType": "PETROL",
     "Transmission": "MANUAL",
