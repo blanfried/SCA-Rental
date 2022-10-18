@@ -1,18 +1,16 @@
+<div class="oner"><h1>All Cars</h1></div>
+
 {{#each cars}}
 
   <div class="card" style="width: 18rem;">
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDRFoXBJ5uhrTGiAlIijALxnPh7Mz9xmKDg&usqp=CAU"
-      class="card-img-top"
-      alt="..."
-    />
+    <img src="{{image}}" class="card-img-top" alt="..." />
     <div class="card-body">
-      <h3>{{brand}} {{model}}</h3>
-      <li><p class="card-text"><strong>Size:</strong> {{size}}</p></li>
-      <li><p class="card-text"><strong>Transmission:</strong>
-          {{transmission}}</p></li>
-      <p class="card-text">Some quick example text to build on the card title
-        and make up the bulk of the card's content.</p>
+      <h3>{{Marque}} {{Range}}</h3>
+      <h4>{{Location}}</h4>
+
+      <a href="/car/{{id}}" type="button" class="btn btn-primary car">More
+        Details</a>
     </div>
   </div>
+
 {{/each}}

@@ -11,19 +11,39 @@ Car.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    brand: {
+    Marque: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    model: {
+    Range: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    size: {
+    DriveType: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    transmission: {
+    Transmission: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    BodyStyle: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    FuelType: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    DriveType: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    Location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image: {
       type: DataTypes.STRING,
       allowNull: false,
     },
