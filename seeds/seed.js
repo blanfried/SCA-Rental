@@ -1,9 +1,10 @@
 const sequelize = require("../config/connection");
-const { User, Car, Location } = require("../models");
+const { User, Car, Location, Bookings } = require("../models");
 
 const userData = require("./userData.json");
 const carData = require("./carData.json");
 const locationData = require("./locationData.json");
+const bookingData = require("./bookingData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -25,6 +26,11 @@ const seedDatabase = async () => {
       location_id: location[Math.floor(Math.random() * location.length)].id,
     });
   }
+
+  const bookings = await Bookings.bulkCreate(bookingData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };

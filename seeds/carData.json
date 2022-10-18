@@ -1,66 +1,136 @@
 [
   {
-    "brand": "Ford",
-    "model": "Mondeo",
-    "size": "small",
-    "transmission": "automatic",
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "CITROEN",
+    "Range": "C4",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
     "Location": "London",
-    "filename": 
+    "image": "/images/v4.webp"
+  },
+
+  {
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "NISSAN",
+    "Range": "LEAF",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/leaf.jpg"
+  },
+
+  {
+    "FuelType": "ELECTRIC/PETROL",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "SALOON",
+    "Marque": "MERCEDES",
+    "Range": "C-CLASS",
+    "NumberOfDoors": 4,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/cclass.png"
   },
   {
-    "brand": "Vauxhall",
-    "model": "Corsa",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "London"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Coupe",
+    "Marque": "NISSAN",
+    "Range": "JUKE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/juke.jfif"
   },
   {
-    "brand": "Mercedes-Benz",
-    "model": "GLA",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "London"
-  },
-{
-    "brand": "Kia",
-    "model": "Picanto",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Birmingham"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "KIA",
+    "Range": "STONIC",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/stonic.webp"
   },
   {
-    "brand": "BMW",
-    "model": "3 Series",
-    "size": "medium",
-    "transmission": "automatic",
-    "Location": "Birmingham"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "ESTATE",
+    "Marque": "KIA",
+    "Range": "SPORTAGE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/sportage.jpg"
   },
   {
-    "brand": "Mitsubishi",
-    "model": "Shogun",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Birmingham"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "PEUGEOT",
+    "Range": "208",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/p208.png"
   },
   {
-    "brand": "Chevrolet",
-    "model": "Spark",
-    "size": "small",
-    "transmission": "manual",
-    "Location": "Los Angeles"
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "FIAT",
+    "Range": "Tipo",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/tipo.jpg"
   },
   {
-    "brand": "Suzuki",
-    "model": "Liana",
-    "size": "medium",
-    "transmission": "automatic",
-    "Location": "Los Angeles"
+    "FuelType": "PETROL",
+    "Transmission": "SEMI AUTO",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "FIAT",
+    "Range": "500X",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/500.png"
   },
   {
-    "brand": "JEEP",
-    "model": "Cherokee",
-    "size": "large",
-    "transmission": "automatic",
-    "Location": "Los Angeles"
+    "FuelType": "DIESEL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "JAGUAR",
+    "Range": "E-PACE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/epace.webp"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "SEAT",
+    "Range": "IBIZA",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/ibiza.webp"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Estate",
+    "Marque": "FORD",
+    "Range": "ECOSPORT",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/eco.jpg"
   }
 ]

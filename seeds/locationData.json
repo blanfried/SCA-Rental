@@ -1,14 +1,18 @@
 [
   {
     "country": "United Kingdom",
-    "city": "Birmingham"
+    "city": "Birmingham",
+    "image": "images/birmingham.webp"
   },
   {
     "country": "United States",
-    "city": "Los Angeles"
+    "city": "Los Angeles",
+    "image": "images/losangeles.webp"
   },
   {
     "country": "United Kingdom",
-    "city": "London"
+    "city": "London",
+    "image": "images/london.jpeg"
   }
 ]
+
