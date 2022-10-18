@@ -48,6 +48,7 @@ p.slogan {
   height: 175px;
 }
 
+
 #logout,
 #login {
   float: right;
@@ -215,3 +216,4 @@ input.placeholder {
     margin-left: 20px;
   }
 }
+

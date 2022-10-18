@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const apiRoutes = require("./api");
-const { User, Car, Location } = require("../models");
+const { User, Car, Location, Bookings } = require("../models");
 const { findAll } = require("../models/Location");
 const withAuth = require("../utils/auth");
 router.use("/api", apiRoutes);
@@ -37,6 +37,42 @@ router.get("/car", async (req, res) => {
   }
 });
 
+router.get("/bookings/:id", async (req, res) => {
+  try {
+    const bookingData = await Bookings.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ["name"],
+        },
+      ],
+    });
+
+    const booking = bookingData.get({ plain: true });
+
+    res.render("booking", {
+      ...booking,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/booking", async (req, res) => {
+  try {
+    let bookingData = await Bookings.findAll();
+    let bookings = bookingData.map((book) => book.get({ plain: true }));
+    console.log(req.session.logged_in);
+    res.render("booking", {
+      bookings,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/location", async (req, res) => {
   try {
     let locationData = await Location.findAll();
@@ -57,16 +93,8 @@ router.get("/car/:id", withAuth, async (req, res) => {
     console.log(carDataSingle);
     const carSingle = carDataSingle.get({ plain: true });
     console.log("Single", carSingle.brand);
-    res.render(
-      "carsingle",
-      {
-        carSingle,
-        logged_in: req.session.logged_in,
-      }
-      // , {
-      //   include: [{ model: Car, attributes: ["id", "brand", "model", "size"] }],
-      // }
-    );
+
+    res.render("carsingle", carSingle);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -77,8 +105,8 @@ router.get("/location/:id", withAuth, async (req, res) => {
     const locationDataSingle = await Car.findAll({
       where: { location_id: req.params.id },
     });
+
     console.log(locationDataSingle);
-    // const locationSingle = locationDataSingle.get({ plain: true });
 
     const locationCars = locationDataSingle.map((results) =>
       results.get({ plain: true })
@@ -86,16 +114,7 @@ router.get("/location/:id", withAuth, async (req, res) => {
 
     console.log(locationCars);
 
-    // console.log("Single", locationSingle.y);
-    res.render(
-      "locationsingle",
-      { locationCars, logged_in: req.session.logged_in }
-      // {
-      //   include: [
-      //     { model: Location, attributes: ["id", "country", "city", "image"] },
-      //   ],
-      // }
-    );
+    res.render("locationsingle", { locationCars });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -106,7 +125,8 @@ router.get("/profile", withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
-      include: [{ model: Project }],
+
+      include: [{ model: Bookings }],
     });
 
     const user = userData.get({ plain: true });
@@ -122,6 +142,11 @@ router.get("/profile", withAuth, async (req, res) => {
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
+
+  if (req.session.logged_in) {
+    res.redirect("/location");
+    return;
+  }
 
   res.render("login");
 });

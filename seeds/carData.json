@@ -6,7 +6,9 @@
     "Marque": "CITROEN",
     "Range": "C4",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/v4.webp"
   },
 
   {
@@ -16,7 +18,9 @@
     "Marque": "NISSAN",
     "Range": "LEAF",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/leaf.jpg"
   },
 
   {
@@ -26,7 +30,9 @@
     "Marque": "MERCEDES",
     "Range": "C-CLASS",
     "NumberOfDoors": 4,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/cclass.png"
   },
   {
     "FuelType": "PETROL",
@@ -35,7 +41,9 @@
     "Marque": "NISSAN",
     "Range": "JUKE",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/juke.jfif"
   },
   {
     "FuelType": "PETROL",
@@ -44,7 +52,9 @@
     "Marque": "KIA",
     "Range": "STONIC",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/stonic.webp"
   },
   {
     "FuelType": "PETROL",
@@ -53,7 +63,9 @@
     "Marque": "KIA",
     "Range": "SPORTAGE",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/sportage.jpg"
   },
   {
     "FuelType": "PETROL",
@@ -62,16 +74,20 @@
     "Marque": "PEUGEOT",
     "Range": "208",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/p208.png"
   },
   {
     "FuelType": "PETROL",
     "Transmission": "MANUAL",
     "BodyStyle": "HATCHBACK",
     "Marque": "FIAT",
-    "Range": "208",
+    "Range": "Tipo",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/tipo.jpg"
   },
   {
     "FuelType": "PETROL",
@@ -80,7 +96,9 @@
     "Marque": "FIAT",
     "Range": "500X",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/500.png"
   },
   {
     "FuelType": "DIESEL",
@@ -89,7 +107,9 @@
     "Marque": "JAGUAR",
     "Range": "E-PACE",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/epace.webp"
   },
   {
     "FuelType": "PETROL",
@@ -98,7 +118,9 @@
     "Marque": "SEAT",
     "Range": "IBIZA",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/ibiza.webp"
   },
   {
     "FuelType": "PETROL",
@@ -107,6 +129,8 @@
     "Marque": "FORD",
     "Range": "ECOSPORT",
     "NumberOfDoors": 5,
-    "DriveType": "4X2"
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/eco.jpg"
   }
 ]
