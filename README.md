@@ -1,4 +1,3 @@
-
 # SCA-Rental
 
 # Brief description:
@@ -11,16 +10,16 @@ When the user lands on the main page they are able to view to the main page howe
 
 # Features Used:
 
-Date and Time - new library
-Handlebars
-Mysql
-Sequalize
-Insomnia
-Node.js
-Express
-D-Beaver
-Javascript
-CSS
+- Date and Time - new library
+- Handlebars
+- Mysql
+- Sequalize
+- Insomnia
+- Node.js
+- Express
+- D-Beaver
+- Javascript
+- CSS
 
 # User Story:
 
@@ -36,8 +35,8 @@ Repo link - https://github.com/blanfried/SCA-Rental
 
 # Contributors:
 
-Aisha Hassan - https://github.com/aisha1710
-Afif Patel - https://github.com/Affiiiffff
-Baer Lanfried - https://github.com/blanfried
-Darren Kandekore - https://github.com/kandekore
-Nafisa Mohamed - https://github.com/nafisa-am
+- Aisha Hassan - https://github.com/aisha1710
+- Afif Patel - https://github.com/Affiiiffff
+- Baer Lanfried - https://github.com/blanfried
+- Darren Kandekore - https://github.com/kandekore
+- Nafisa Mohamed - https://github.com/nafisa-am
