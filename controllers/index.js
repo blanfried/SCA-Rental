@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const apiRoutes = require("./api");
-const { User, Car, Location } = require("../models");
+const { User, Car, Location, Bookings } = require("../models");
 const { findAll } = require("../models/Location");
 router.use("/api", apiRoutes);
 
@@ -32,6 +32,28 @@ router.get("/car", async (req, res) => {
   }
 });
 
+router.get("/bookings/:id", async (req, res) => {
+  try {
+    const bookingData = await Bookings.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ["name"],
+        },
+      ],
+    });
+
+    const booking = bookingData.get({ plain: true });
+
+    res.render("booking", {
+      ...booking,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/location", async (req, res) => {
   try {
     let locationData = await Location.findAll();
@@ -51,13 +73,7 @@ router.get("/car/:id", async (req, res) => {
     console.log(carDataSingle);
     const carSingle = carDataSingle.get({ plain: true });
     console.log("Single", carSingle.brand);
-    res.render(
-      "carsingle",
-      carSingle
-      // , {
-      //   include: [{ model: Car, attributes: ["id", "brand", "model", "size"] }],
-      // }
-    );
+    res.render("carsingle", carSingle);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -68,26 +84,16 @@ router.get("/location/:id", async (req, res) => {
     const locationDataSingle = await Car.findAll({
       where: { location_id: req.params.id },
     });
-    // const cityName = await Location.findOne(req.params.id);
+
     console.log(locationDataSingle);
-    // const locationName = cityName.get({ plain: true });
-    // console.log(cityName);
+
     const locationCars = locationDataSingle.map((results) =>
       results.get({ plain: true })
     );
 
     console.log(locationCars);
 
-    // console.log("Single", locationSingle.y);
-    res.render(
-      "locationsingle",
-      { locationCars }
-      // {
-      //   include: [
-      //     { model: Location, attributes: ["id", "country", "city", "image"] },
-      //   ],
-      // }
-    );
+    res.render("locationsingle", { locationCars });
   } catch (err) {
     res.status(500).json(err);
   }
