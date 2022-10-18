@@ -93,20 +93,29 @@
       </div>
       <div class="modal-body"><h3>When dates would you like to rent the
           {{Marque}}
-          {{Range}}?</h3>
-        <p>Pick Up Date: <input type="text" id="datepicker" /></p>
-        <p>Drop Off Date: <input type="text" id="datepicker1" /></p>
+          {{Range}}?</h3><form class="form new-booking-form">
+        <p>Pick Up Date: <input class="form-input" type="text" id="datepicker" name ="pick-up"></p>
+        <p>Drop Off Date: <input class="form-input" type="text" id="datepicker1" name="drop-off"/></p>
         <p>Drop Off Date:
-          <input type="text" value="{{Marque}} {{Range}}" /></p>
+          <input
+          class="form-input" 
+            type="text"
+            id="bookedcar"
+            name="bookedcar"
+            value="{{Marque}} {{Range}}"
+          /></p>
       </div>
       <div class="modal-footer">
         <button
           type="button"
           class="btn btn-secondary"
           data-bs-dismiss="modal"
+          data-id="{{booking.id}}"
         >Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div></form>
     </div>
   </div>
 </div>
+
+<script src="./js/profile.js"></script>

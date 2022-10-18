@@ -2,18 +2,6 @@ const router = require("express").Router();
 const withAuth = require("../../utils/auth");
 const { Bookings } = require("../../models");
 
-router.get("/", withAuth, async (req, res) => {
-  try {
-    const bookingData = await Bookings.findAll({
-      include: [User],
-    });
-
-    res.status(200).json(bookingData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.post("/", withAuth, async (req, res) => {
   try {
     const newBooking = await Bookings.create({
