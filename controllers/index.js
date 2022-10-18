@@ -3,8 +3,6 @@ const apiRoutes = require("./api");
 
 router.use("/api", apiRoutes);
 
-const { User, Car, Location } = require("../models");
-
 const { User, Car, Location, Bookings } = require("../models");
 
 const { findAll } = require("../models/Location");
@@ -64,7 +62,7 @@ router.get("/bookings/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//
 router.get("/booking", async (req, res) => {
   try {
     let bookingData = await Bookings.findAll();
@@ -105,6 +103,8 @@ router.get("/car/:id", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//
 
 router.get("/location/:id", withAuth, async (req, res) => {
   try {
@@ -147,7 +147,7 @@ router.get("/profile", withAuth, async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  // If the user is already logged in, redirect the request to another route
+  // If the user is already logged in, redirect the request to another route  //
 
   if (req.session.logged_in) {
     res.redirect("/location");
