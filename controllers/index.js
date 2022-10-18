@@ -62,7 +62,7 @@ router.get("/bookings/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//
 router.get("/booking", async (req, res) => {
   try {
     let bookingData = await Bookings.findAll();
