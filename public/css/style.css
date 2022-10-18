@@ -44,3 +44,16 @@ p.slogan {
 .card-img-top {
   height: 175px;
 }
+button.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+a.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+.oner {
+  width: 100%;
+}

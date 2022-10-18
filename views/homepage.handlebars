@@ -64,20 +64,16 @@
   </button>
 </div>
 {{#each locations}}
+
   <div class="card" style="width: 18rem;">
     <img src={{image}} class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{city}}</h5>
-      <p class="card-text">Some quick example text to build on the card title
-        and make up the bulk of the card's content.</p>
-      {{#if logged_in}}
-        <a href="http://localhost:3001/location" class="btn btn-primary">Go
-          somewhere</a>
-      {{else}}
-        <a href="/login" class="btn btn-primary">Go somewhere</a>
-      {{/if}}
+
+      <p class="card-text">Text</p>
+      <a href="/location/{{id}}" class="btn btn-primary">See the
+        {{city}}
+        branch cars</a>
 
     </div>
-  </div>
-
-{{/each}}
+  </div>{{/each}}
