@@ -3,8 +3,6 @@ const apiRoutes = require("./api");
 
 router.use("/api", apiRoutes);
 
-const { User, Car, Location } = require("../models");
-
 const { User, Car, Location, Bookings } = require("../models");
 
 const { findAll } = require("../models/Location");
