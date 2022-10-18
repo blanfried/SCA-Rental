@@ -94,9 +94,9 @@ input.hidden {
       <div class="container-fluid">
         <a class="navbar-brand" href="/">SCA Car Rental</a>
         {{#if logged_in}}
-          <button id="logout">Logout</button>
+          <div class="button" style="align-items:flex-end"><button id="logout">Logout</button></div>
         {{else}}
-          <button><a href="/login">Login</a></button>
+          <div class="button" style="align-items:flex-end"><button id="login"><a href="/login" style="text-decoration: none; color:black">Login</a></button></div>
         {{/if}}
         <button
           class="navbar-toggler"
@@ -145,6 +145,7 @@ input.hidden {
                   Locations
                 </a>
                 <ul class="dropdown-menu">
+
                   <li><a
                       class="dropdown-item"
                       href="/location/1"
@@ -154,6 +155,7 @@ input.hidden {
                       href="/location/3"
                     >London</a></li>
                   <li><a class="dropdown-item" href="/location/2">LA</a></li>
+
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
