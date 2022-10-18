@@ -81,7 +81,6 @@ router.get("/car/:id", withAuth, async (req, res) => {
     console.log("Single", carSingle.brand);
 
     res.render("carsingle", carSingle);
-
   } catch (err) {
     res.status(500).json(err);
   }
@@ -101,9 +100,7 @@ router.get("/location/:id", withAuth, async (req, res) => {
 
     console.log(locationCars);
 
-
     res.render("locationsingle", { locationCars });
-
   } catch (err) {
     res.status(500).json(err);
   }
@@ -114,9 +111,8 @@ router.get("/profile", withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
-      
-      include: [{ model: Bookings }],
 
+      include: [{ model: Bookings }],
     });
 
     const user = userData.get({ plain: true });
@@ -134,7 +130,7 @@ router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
 
   if (req.session.logged_in) {
-    res.redirect("/profile");
+    res.redirect("/location");
     return;
   }
 
