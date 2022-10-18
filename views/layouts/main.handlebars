@@ -19,9 +19,9 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="/">SCA Car Rental</a>
         {{#if logged_in}}
-          <button id="logout">Logout</button>
+          <div class="button" style="align-items:flex-end"><button id="logout">Logout</button></div>
         {{else}}
-          <button><a href="/login">Login</a></button>
+          <div class="button" style="align-items:flex-end"><button id="login"><a href="/login" style="text-decoration: none; color:black">Login</a></button></div>
         {{/if}}
         <button
           class="navbar-toggler"
@@ -67,9 +67,9 @@
                   Locations
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Birmingham</a></li>
-                  <li><a class="dropdown-item" href="#">London</a></li>
-                  <li><a class="dropdown-item" href="#">LA</a></li>
+                  <li><a class="dropdown-item" href="/location">Birmingham</a></li>
+                  <li><a class="dropdown-item" href="/location">London</a></li>
+                  <li><a class="dropdown-item" href="/location">LA</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
