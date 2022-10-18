@@ -1,6 +1,12 @@
 const router = require("express").Router();
 const apiRoutes = require("./api");
+
+router.use("/api", apiRoutes);
+
+const { User, Car, Location } = require("../models");
+
 const { User, Car, Location, Bookings } = require("../models");
+
 const { findAll } = require("../models/Location");
 const withAuth = require("../utils/auth");
 router.use("/api", apiRoutes);
