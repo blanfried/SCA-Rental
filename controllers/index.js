@@ -59,6 +59,20 @@ router.get("/bookings/:id", async (req, res) => {
   }
 });
 
+router.get("/booking", async (req, res) => {
+  try {
+    let bookingData = await Bookings.findAll();
+    let bookings = bookingData.map((book) => book.get({ plain: true }));
+    console.log(req.session.logged_in);
+    res.render("booking", {
+      bookings,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/location", async (req, res) => {
   try {
     let locationData = await Location.findAll();
