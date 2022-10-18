@@ -3,7 +3,6 @@ const userRoutes = require("./userRoutes");
 const carRoutes = require("./carRoutes");
 const locationRoutes = require("./locationRoutes");
 
-const locationRoutes = require("./locationRoutes");
 
 router.use("/users", userRoutes);
 router.use("/cars", carRoutes);
