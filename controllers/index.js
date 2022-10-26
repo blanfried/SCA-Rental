@@ -28,13 +28,14 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/car", async (req, res) => {
+router.get("/car", withAuth, async (req, res) => {
   try {
     let carData = await Car.findAll();
     let cars = carData.map((vehicles) => vehicles.get({ plain: true }));
 
     res.render("car", {
       cars,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -98,7 +99,7 @@ router.get("/car/:id", withAuth, async (req, res) => {
     const carSingle = carDataSingle.get({ plain: true });
     console.log("Single", carSingle.brand);
 
-    res.render("carsingle", carSingle);
+    res.render("carsingle", { ...carSingle, logged_in: req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -120,7 +121,10 @@ router.get("/location/:id", withAuth, async (req, res) => {
 
     console.log(locationCars);
 
-    res.render("locationsingle", { locationCars });
+    res.render("locationsingle", {
+      locationCars,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
