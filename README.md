@@ -33,15 +33,13 @@ As a USER I want to be able to search cars from a specific location so that I ca
 
 <img width="1439" alt="Screenshot 2022-10-19 at 00 32 07" src="https://user-images.githubusercontent.com/108237958/196564606-701da0f8-bc9f-4e58-8afa-4da61e7c93f2.png">
 
-
 <img width="1439" alt="Screenshot 2022-10-19 at 00 32 18" src="https://user-images.githubusercontent.com/108237958/196564624-5b3cde79-672b-44d7-819c-ff5e3758e4b5.png">
 
 <img width="1439" alt="Screenshot 2022-10-19 at 00 35 01" src="https://user-images.githubusercontent.com/108237958/196564635-171d4f1d-8c40-4d62-b457-bf1bf78d19d3.png">
 
-
 # Links
 
-Deploying link -
+Deploying link - https://morning-journey-04900.herokuapp.com/
 
 Repo link - https://github.com/blanfried/SCA-Rental
 
